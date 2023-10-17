@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>봉사 정보</title>
+</head>
+<body>
+<h1>1365 봉사 데이터 가져오기</h1>
+<div id="scrapedData">
+    <ul>
+        <li th:each="data : ${crawledData}" th:text="${data}"></li>
+    </ul>
+</div>
+</body>
+</html>
